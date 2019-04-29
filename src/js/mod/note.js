@@ -40,7 +40,7 @@ Note.prototype = {
       + '<div class="note-ct" contenteditable="true"></div>'
       + '</div>';
     this.$note = $(tpl);
-    this.$note.find('.note-ct').text(this.opts.context);
+    this.$note.find('.note-ct').html(this.opts.context);
     this.$note.find('.username').text(this.opts.username);
     console.log(this.opts.ifprivate)
     if(this.opts.ifprivate === 0){
